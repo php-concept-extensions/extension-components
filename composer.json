@@ -1,6 +1,6 @@
 {
     "name": "php-concept/extension-components",
-    "description": "Concept Components extension — plugin manifest registry and boot wiring",
+    "description": "Concept Components extension \u2014 plugin manifest registry and boot wiring",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -17,5 +17,16 @@
         "league/container": "^5.1",
         "symfony/console": "^7.2",
         "symfony/filesystem": "^7.2"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
     }
 }
